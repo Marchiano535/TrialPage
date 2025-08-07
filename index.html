@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marchiano Aulia Faraitody - Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Marchiano Aulia Faraitody - Full Stack Developer & Designer. Experienced in React, Node.js, Python, and modern web technologies.">
+    <meta name="keywords" content="full stack developer, web developer, designer, react, nodejs, python, javascript, portfolio">
+    <meta name="author" content="Marchiano Aulia Faraitody">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marchiano-portfolio.com/">
+    <meta property="og:title" content="Marchiano Aulia Faraitody - Portfolio">
+    <meta property="og:description" content="Full Stack Developer & Designer specializing in modern web technologies">
+    <meta property="og:image" content="https://marchiano-portfolio.com/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marchiano-portfolio.com/">
+    <meta property="twitter:title" content="Marchiano Aulia Faraitody - Portfolio">
+    <meta property="twitter:description" content="Full Stack Developer & Designer specializing in modern web technologies">
+    <meta property="twitter:image" content="https://marchiano-portfolio.com/assets/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="nav-logo">MAF</h2>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content fade-in">
+                    <div class="profile-img hover-scale">
+                        <img src="https://via.placeholder.com/300x300/007acc/ffffff?text=MAF" alt="Marchiano Aulia Faraitody">
+                    </div>
+                    <h1 class="gradient-text">Marchiano Aulia Faraitody</h1>
+                    <p class="hero-subtitle typewriter">Full Stack Developer & Designer</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary hover-float" data-section="portfolio">View Portfolio</button>
+                        <button class="btn btn-secondary hover-float" data-section="contact">Contact Me</button>
+                    </div>
+                </div>
+                <div class="hero-stats fade-in">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Hello! I'm Marchiano</h3>
+                        <p>I'm a passionate full-stack developer and designer with expertise in creating modern, responsive web applications. I love turning complex problems into simple, beautiful solutions.</p>
+                        <p>With over 2 years of experience in web development, I've worked with various technologies including JavaScript, Python, React, Node.js, and more. I'm always eager to learn new technologies and take on challenging projects.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <strong>Location:</strong> Indonesia
+                            </div>
+                            <div class="detail-item">
+                                <strong>Email:</strong> marchiano.faraitody@email.com
+                            </div>
+                            <div class="detail-item">
+                                <strong>Phone:</strong> +62 xxx-xxxx-xxxx
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/400x500/007acc/ffffff?text=About+Me" alt="About Marchiano">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item card-hover" data-category="web">
+                        <img src="https://via.placeholder.com/400x300/007acc/ffffff?text=E-Commerce+App" alt="E-Commerce App">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack e-commerce solution with React & Node.js</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn btn-small hover-glow"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-small hover-glow"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item card-hover" data-category="web">
+                        <img src="https://via.placeholder.com/400x300/28a745/ffffff?text=Task+Manager" alt="Task Manager">
+                        <div class="portfolio-overlay">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative task management tool with real-time updates</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn btn-small hover-glow"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-small hover-glow"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item card-hover" data-category="mobile">
+                        <img src="https://via.placeholder.com/400x300/dc3545/ffffff?text=Weather+App" alt="Weather App">
+                        <div class="portfolio-overlay">
+                            <h3>Weather Mobile App</h3>
+                            <p>React Native weather application with location tracking</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn btn-small hover-glow"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-small hover-glow"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item card-hover" data-category="design">
+                        <img src="https://via.placeholder.com/400x300/6f42c1/ffffff?text=Brand+Design" alt="Brand Design">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity Design</h3>
+                            <p>Complete brand identity package for tech startup</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn btn-small hover-glow"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-small hover-glow"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item card-hover" data-category="web">
+                        <img src="https://via.placeholder.com/400x300/fd7e14/ffffff?text=Blog+Platform" alt="Blog Platform">
+                        <div class="portfolio-overlay">
+                            <h3>Blog Platform</h3>
+                            <p>Modern blog platform with CMS functionality</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn btn-small hover-glow"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-small hover-glow"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item card-hover" data-category="design">
+                        <img src="https://via.placeholder.com/400x300/20c997/ffffff?text=UI+Design" alt="UI Design">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile App UI Design</h3>
+                            <p>Clean and modern UI design for fitness tracking app</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn btn-small hover-glow"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-small hover-glow"><i class="fab fa-figma"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Backend</h3>
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Tools & Others</h3>
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together!</h3>
+                        <p>I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project or just say hello!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>marchiano.af@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+62 812-9634-****</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

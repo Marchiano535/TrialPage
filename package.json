@@ -1,0 +1,49 @@
+{
+  "name": "marchiano-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Marchiano Aulia Faraitody - Full Stack Developer & Designer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=index.html",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/css/style.min.css css/style.css css/utilities.css",
+    "minify-js": "uglifyjs js/script.js js/analytics.js -o dist/js/script.min.js",
+    "optimize": "imagemin assets/*.{jpg,png,svg} --out-dir=dist/assets",
+    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html",
+    "validate": "html-validate index.html",
+    "test": "echo 'No tests specified yet'",
+    "deploy": "gh-pages -d .",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "full-stack",
+    "javascript",
+    "responsive-design",
+    "front-end",
+    "back-end"
+  ],
+  "author": "Marchiano Aulia Faraitody",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.0",
+    "gh-pages": "^4.0.0",
+    "html-validate": "^7.13.0",
+    "imagemin-cli": "^7.0.0",
+    "lighthouse": "^10.0.0",
+    "live-server": "^1.2.2",
+    "uglify-js": "^3.17.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/marchiano-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/marchiano-portfolio/issues"
+  },
+  "homepage": "https://marchiano-portfolio.com"
+}
